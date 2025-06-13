@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MonthPickerDialog">
+
+    <TextView
+        android:id="@+id/tv_date_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MMMM YYYY"
+        android:textSize="30sp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="@color/grey"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_arrow_back"
+            android:padding="2dp"
+            android:background="?android:selectableItemBackgroundBorderless"/>
+
+        <TextView
+            android:id="@+id/tv_year_label"
+            android:text="YYYY"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib_arrow_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_arrow_forward"
+            android:padding="2dp"
+            android:background="?android:selectableItemBackgroundBorderless"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_month_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="@dimen/tv_month_text_size"
+            android:textStyle="bold"
+            android:text="MMMM"/>
+
+        <TextView
+            android:id="@+id/tv_month_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="@dimen/tv_month_text_size"
+            android:textStyle="bold"
+            android:text="MMMM"/>
+
+        <TextView
+            android:id="@+id/tv_month_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="@dimen/tv_month_text_size"
+            android:textStyle="bold"
+            android:text="MMMM"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_month_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="@dimen/tv_month_text_size"
+            android:textStyle="bold"
+            android:text="MMMM"/>
+
+        <TextView
+            android:id="@+id/tv_month_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="@dimen/tv_month_text_size"
+            android:textStyle="bold"
+            android:text="MMMM"/>
+
+        <TextView
+            android:id="@+id/tv_month_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="@dimen/tv_month_text_size"
+            android:textStyle="bold"
+            android:text="MMMM"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_month_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="@dimen/tv_month_text_size"
+            android:textStyle="bold"
+            android:text="MMMM"/>
+
+        <TextView
+            android:id="@+id/tv_month_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="@dimen/tv_month_text_size"
+            android:textStyle="bold"
+            android:text="MMMM"/>
+
+        <TextView
+            android:id="@+id/tv_month_8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="@dimen/tv_month_text_size"
+            android:textStyle="bold"
+            android:text="MMMM"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_month_9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="@dimen/tv_month_text_size"
+            android:textStyle="bold"
+            android:text="MMMM"/>
+
+        <TextView
+            android:id="@+id/tv_month_10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="@dimen/tv_month_text_size"
+            android:textStyle="bold"
+            android:text="MMMM"/>
+
+        <TextView
+            android:id="@+id/tv_month_11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="@dimen/tv_month_text_size"
+            android:textStyle="bold"
+            android:text="MMMM"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end|center_vertical"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:background="@null"
+            android:textStyle="bold"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_positive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:background="@null"
+            android:textStyle="bold"
+            android:paddingStart="48dp"
+            android:paddingEnd="48dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
