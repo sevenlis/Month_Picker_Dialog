@@ -1,35 +1,35 @@
 <resources>
     <string name="app_name">Month Picker Dialog</string>
     <string-array name="months">
-        <item>"ЯНВАРЬ"</item>
-        <item>"ФЕВРАЛЬ"</item>
-        <item>"МАРТ"</item>
-        <item>"АПРЕЛЬ"</item>
-        <item>"МАЙ"</item>
-        <item>"ИЮНЬ"</item>
-        <item>"ИЮЛЬ"</item>
-        <item>"АВГУСТ"</item>
-        <item>"СЕНТЯБРЬ"</item>
-        <item>"ОКТЯБРЬ"</item>
-        <item>"НОЯБРЬ"</item>
-        <item>"ДЕКАБРЬ"</item>
+        <item>"JANUARY"</item>
+        <item>"FEBRUARY"</item>
+        <item>"MARCH"</item>
+        <item>"APRIL"</item>
+        <item>"MAY"</item>
+        <item>"JUNE"</item>
+        <item>"JULY"</item>
+        <item>"AUGUST"</item>
+        <item>"SEPTEMBER"</item>
+        <item>"OCTOBER"</item>
+        <item>"NOVEMBER"</item>
+        <item>"DECEMBER"</item>
     </string-array>
     <string-array name="months_short">
-        <item>"ЯНВ."</item>
-        <item>"ФЕВ."</item>
-        <item>"МАР."</item>
-        <item>"АПР."</item>
-        <item>"МАЙ."</item>
-        <item>"ИЮН."</item>
-        <item>"ИЮЛ."</item>
-        <item>"АВГ."</item>
-        <item>"СЕН."</item>
-        <item>"ОКТ."</item>
-        <item>"НОЯ."</item>
-        <item>"ДЕК."</item>
+        <item>"JAN."</item>
+        <item>"FEB."</item>
+        <item>"MAR."</item>
+        <item>"APR."</item>
+        <item>"MAY."</item>
+        <item>"JUN."</item>
+        <item>"JUL."</item>
+        <item>"AUG."</item>
+        <item>"SEP."</item>
+        <item>"OCT."</item>
+        <item>"NOV."</item>
+        <item>"DEC."</item>
     </string-array>
     <string name="ok">OK</string>
-    <string name="cancel">ОТМЕНА</string>
-    <string name="yes">ДА</string>
-    <string name="no">НЕТ</string>
+    <string name="cancel"><![CDATA[CANCEL]]></string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
 </resources>

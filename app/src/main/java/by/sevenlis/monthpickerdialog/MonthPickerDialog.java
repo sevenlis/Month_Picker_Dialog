@@ -25,10 +25,7 @@ public class MonthPickerDialog extends AppCompatDialog {
     private final Calendar calMonthDate;
     private final MonthPickerDialogListener mListener;
 
-    private final String[] months;
-    private final String[] months_short;
-
-    private boolean useShortNames = false;
+    private String[] names;
 
     public MonthPickerDialog(@NonNull Context mContext, @NonNull MonthPickerDialogListener mListener) {
         super(mContext, R.style.Theme_EditDialogTheme);
@@ -36,8 +33,7 @@ public class MonthPickerDialog extends AppCompatDialog {
         this.calMonthDate.set(Calendar.DATE, 1);
         this.mContext = mContext;
         this.mListener = mListener;
-        this.months = mContext.getResources().getStringArray(R.array.months);
-        this.months_short = mContext.getResources().getStringArray(R.array.months_short);
+        this.names = mContext.getResources().getStringArray(R.array.months);
     }
 
     public MonthPickerDialog setDate(Calendar calDate) {
@@ -47,7 +43,7 @@ public class MonthPickerDialog extends AppCompatDialog {
     }
 
     public MonthPickerDialog useShortNames(boolean useShortNames) {
-        this.useShortNames = useShortNames;
+        this.names = mContext.getResources().getStringArray(useShortNames ? R.array.months_short : R.array.months);
         return this;
     }
 
@@ -60,18 +56,15 @@ public class MonthPickerDialog extends AppCompatDialog {
     }
 
     private void setDateLabel() {
-        String[] names = useShortNames ? months_short : months;
-        String pattern = FormatUtils.capitalize(names[calMonthDate.get(Calendar.MONTH)]) + " yyyy";
-        binding.tvDateLabel.setText(FormatUtils.fDate(calMonthDate, pattern));
+        String sDate = names[calMonthDate.get(Calendar.MONTH)] + " " + calMonthDate.get(Calendar.YEAR);
+        binding.tvDateLabel.setText(sDate);
     }
 
     private void setYearLabel() {
-        String pattern = "yyyy";
-        binding.tvYearLabel.setText(FormatUtils.fDate(calMonthDate, pattern));
+        binding.tvYearLabel.setText(String.valueOf(calMonthDate.get(Calendar.YEAR)));
     }
 
     private void setViews() {
-        String[] names = useShortNames ? months_short : months;
         binding.tvMonth0.setText(names[Calendar.JANUARY]);
         binding.tvMonth1.setText(names[Calendar.FEBRUARY]);
         binding.tvMonth2.setText(names[Calendar.MARCH]);

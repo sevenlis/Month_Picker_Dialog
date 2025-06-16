@@ -1,7 +1,6 @@
 package by.sevenlis.monthpickerdialog;
 
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements MonthPickerDialog
         });
 
         monthDate = Calendar.getInstance();
-        binding.btnPicker.setText(FormatUtils.fMonth(MainActivity.this, monthDate));
+        binding.btnPicker.setText(FormatUtils.fMonth(MainActivity.this, monthDate, true));
         binding.btnPicker.setOnClickListener(v -> {
             MonthPickerDialog dialog =
                     new MonthPickerDialog(MainActivity.this, MainActivity.this)
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements MonthPickerDialog
     @Override
     public void onMonthPickerDialogPositiveClick(Calendar calMonthDate) {
         monthDate = calMonthDate;
-        binding.btnPicker.setText(FormatUtils.fMonth(this, monthDate));
+        binding.btnPicker.setText(FormatUtils.fMonth(MainActivity.this, monthDate, true));
     }
 
     @Override
